@@ -51,7 +51,7 @@ $APPLICATION->SetTitle("Мои объявления");
 		"PREVIEW_TRUNCATE_LEN" => "",
 		"SEF_FOLDER" => "/lichnyy-kabinet-prodavtsa/moi-obyavleniya/",
 		"SEF_MODE" => "Y",
-		"SEF_URL_TEMPLATES" => Array("detail"=>"#SECTION_CODE#/#ELEMENT_CODE#/","news"=>"","section"=>""),
+		"SEF_URL_TEMPLATES" => Array("detail"=>"#ELEMENT_CODE#/","news"=>"","section"=>""),
 		"SET_LAST_MODIFIED" => "N",
 		"SET_STATUS_404" => "N",
 		"SET_TITLE" => "Y",
