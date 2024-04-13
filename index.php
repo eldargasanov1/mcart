@@ -3,32 +3,21 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Мебельная компания");
 ?>
     <div class="slide-one-item home-slider owl-carousel">
-
         <div class="site-blocks-cover" style="background-image: url(<?=SITE_TEMPLATE_PATH?>/images/hero_bg_1.jpg);" data-aos="fade"
              data-stellar-background-ratio="0.5">
-
             <div class="text">
                 <h2>853 S Lucerne Blvd</h2>
                 <p class="location"><span class="property-icon icon-room"></span> Los Angeles, CA 90005</p>
                 <p class="mb-2"><strong>$2,250,500</strong></p>
-
-
                 <p class="mb-0"><a href="#" class="text-uppercase small letter-spacing-1 font-weight-bold">More Details</a></p>
-
             </div>
         </div>
-
-        <div class="site-blocks-cover" style="background-image: url(<?=SITE_TEMPLATE_PATH?>/images/hero_bg_3.jpg);" data-aos="fade"
-             data-stellar-background-ratio="0.5">
-
+        <div class="site-blocks-cover" style="background-image: url(<?=SITE_TEMPLATE_PATH?>/images/hero_bg_3.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
             <div class="text">
                 <h2>625 S. Berendo St</h2>
                 <p class="location"><span class="property-icon icon-room"></span>607 Los Angeles, CA 90005</p>
                 <p class="mb-2"><strong>$2,250,500</strong></p>
-
-
                 <p class="mb-0"><a href="#" class="text-uppercase small letter-spacing-1 font-weight-bold">More Details</a></p>
-
             </div>
 
         </div>
@@ -36,7 +25,6 @@ $APPLICATION->SetTitle("Мебельная компания");
     </div>
     <div class="py-5">
         <div class="container">
-
             <div class="row">
                 <div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
                     <div class="feature d-flex align-items-start">
@@ -286,9 +274,7 @@ $APPLICATION->SetTitle("Мебельная компания");
                         </div>
                     </a>
                 </div>
-
             </div>
-
         </div>
     </div>
     <div class="site-section">
@@ -300,7 +286,6 @@ $APPLICATION->SetTitle("Мебельная компания");
                     </div>
                 </div>
             </div>
-
             <div class="row">
                 <div class="col-md-6 col-lg-4 mb-4">
                     <a href="#" class="service text-center border rounded">
@@ -385,9 +370,7 @@ $APPLICATION->SetTitle("Мебельная компания");
                             sunt.</p>
                     </div>
                 </div>
-
             </div>
-
         </div>
     </div>
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

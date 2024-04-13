@@ -10,7 +10,6 @@ IncludeTemplateLangFile(__FILE__);
 
     <?php
     use Bitrix\Main\Page\Asset;
-
     Asset::getInstance()->addString("<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700,900|Roboto+Mono:300,400,500'>");
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/fonts/icomoon/style.css");
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/css/bootstrap.min.css");
@@ -25,20 +24,6 @@ IncludeTemplateLangFile(__FILE__);
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/css/fl-bigmug-line.css");
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/css/aos.css");
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/css/style.css");
-
-    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/js/jquery-3.3.1.min.js");
-    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/js/jquery-migrate-3.0.1.min.js");
-    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/js/jquery-ui.js");
-    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/js/popper.min.js");
-    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/js/bootstrap.min.js");
-    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/js/owl.carousel.min.js");
-    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/js/mediaelement-and-player.min.js");
-    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/js/jquery.stellar.min.js");
-    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/js/jquery.countdown.min.js");
-    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/js/jquery.magnific-popup.min.js");
-    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/js/bootstrap-datepicker.min.js");
-    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/js/aos.js");
-    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/js/main.js");
     ?>
 
     <?$APPLICATION->ShowHead();?>
@@ -48,7 +33,7 @@ IncludeTemplateLangFile(__FILE__);
 
 <div id="panel"><?$APPLICATION->ShowPanel();?></div>
 
-<!--<div class="site-loader"></div>-->
+<div class="site-loader"></div>
 
 <div class="site-wrap">
 
