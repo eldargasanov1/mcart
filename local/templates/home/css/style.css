@@ -426,7 +426,7 @@ a:hover {
 }
 .site-navbar .site-navigation .site-menu .has-children > a {
   position: relative;
-  padding-right: 20px;
+  padding-right: 20px !important;
 }
 .site-navbar .site-navigation .site-menu .has-children > a:before {
   position: absolute;
@@ -458,6 +458,7 @@ a:hover {
   -webkit-transition: 0.2s 0s;
   -o-transition: 0.2s 0s;
   transition: 0.2s 0s;
+  z-index: 5;
 }
 .site-navbar .site-navigation .site-menu .has-children .dropdown.arrow-top {
   position: absolute;
@@ -1497,4 +1498,9 @@ a:hover {
 .star.active svg path {
   fill: #ffeb15;
   stroke: #ffeb15;
+}
+
+.blog-img {
+  width: 350px !important;
+  height: 350px !important;
 }
