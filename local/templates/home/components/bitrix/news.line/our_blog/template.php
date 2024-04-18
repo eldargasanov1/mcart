@@ -34,7 +34,9 @@ $this->setFrameMode(true);
                     </a>
                     <div class="p-4 bg-white">
                         <span class="d-block text-secondary small text-uppercase"><?= $arItem['DATE_CREATE'] ?></span>
-                        <h2 class="h5 text-black mb-3"><a href="#"><?= $arItem['NAME'] ?></a></h2>
+                        <h2 class="h5 text-black mb-3">
+                            <a href="<?= $arItem['DETAIL_PAGE_URL'] ?>"><?= $arItem['NAME'] ?></a>
+                        </h2>
                         <p><?= $arItem['PREVIEW_TEXT'] ?></p>
                     </div>
                 </div>

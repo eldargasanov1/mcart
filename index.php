@@ -3,6 +3,7 @@ require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 $APPLICATION->SetTitle("Мебельная компания");
 ?>
 <?php
+$APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 $arrFilter = array("PROPERTY" => array(
     "PRIORITY_DEAL" => true
 ));

@@ -116,26 +116,35 @@ IncludeTemplateLangFile(__FILE__);
                 </div>
                 <div class="col-4 col-md-4 col-lg-8">
                     <? $APPLICATION->IncludeComponent(
-	"bitrix:menu", 
-	"header_menu", 
-	array(
-		"ALLOW_MULTI_SELECT" => "N",
-		"CHILD_MENU_TYPE" => "left",
-		"DELAY" => "N",
-		"MAX_LEVEL" => "3",
-		"MENU_CACHE_GET_VARS" => array(
-		),
-		"MENU_CACHE_TIME" => "3600",
-		"MENU_CACHE_TYPE" => "A",
-		"MENU_CACHE_USE_GROUPS" => "Y",
-		"ROOT_MENU_TYPE" => "top",
-		"USE_EXT" => "N",
-		"COMPONENT_TEMPLATE" => "header_menu"
-	),
-	false
-); ?>
+                        "bitrix:menu",
+                        "header_menu",
+                        array(
+                            "ALLOW_MULTI_SELECT" => "N",
+                            "CHILD_MENU_TYPE" => "left",
+                            "DELAY" => "N",
+                            "MAX_LEVEL" => "3",
+                            "MENU_CACHE_GET_VARS" => array(),
+                            "MENU_CACHE_TIME" => "3600",
+                            "MENU_CACHE_TYPE" => "A",
+                            "MENU_CACHE_USE_GROUPS" => "Y",
+                            "ROOT_MENU_TYPE" => "top",
+                            "USE_EXT" => "N",
+                            "COMPONENT_TEMPLATE" => "header_menu"
+                        ),
+                        false
+                    ); ?>
                 </div>
             </div>
         </div>
     </div>
+    <? $APPLICATION->IncludeComponent(
+        "bitrix:breadcrumb",
+        "nav",
+        array(
+            "COMPONENT_TEMPLATE" => ".default",
+            "PATH" => "",
+            "SITE_ID" => "s1",
+            "START_FROM" => "0"
+        )
+    ); ?>
 </div>
