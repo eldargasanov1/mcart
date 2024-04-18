@@ -6,7 +6,7 @@ if(empty($arResult))
 	return "";
 
 
-$strReturn = '<pre>'.print_r($arResult, true).'</pre>';
+$strReturn = '';
 
 $itemSize = count($arResult);
 
