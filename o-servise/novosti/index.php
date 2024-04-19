@@ -73,5 +73,17 @@ $APPLICATION->SetTitle("Новости");
 		"USE_SEARCH" => "N",
 		"USE_SHARE" => "N"
 	)
+);?><?$APPLICATION->IncludeComponent(
+	"mcart:mcart.iblockelement.like", 
+	".default", 
+	array(
+		"CACHE_TIME" => "86400",
+		"CACHE_TYPE" => "A",
+		"ELEMENT_ID" => "",
+		"IBLOCK_ID" => "7",
+		"IBLOCK_TYPE" => "news",
+		"COMPONENT_TEMPLATE" => ".default"
+	),
+	false
 );?><br>
  </b><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
