@@ -139,12 +139,11 @@ $arrFilter = array("PROPERTY" => array(
         "FIELD_CODE" => array(
             0 => "PREVIEW_TEXT",
             1 => "PREVIEW_PICTURE",
-            2 => "PRICE",
-            3 => "PROPERTY_PRICE",
-            4 => "PROPERTY_TOTAL_AREA",
-            5 => "PROPERTY_NUMBER_OF_FLOORS",
-            6 => "PROPERTY_NUMBER_OF_BATHROOMS",
-            7 => "PROPERTY_GARAGE_AVAILABILITY",
+            2 => "PROPERTY_PRICE",
+            3 => "PROPERTY_TOTAL_AREA",
+            4 => "PROPERTY_NUMBER_OF_FLOORS",
+            5 => "PROPERTY_NUMBER_OF_BATHROOMS",
+            6 => "PROPERTY_GARAGE_AVAILABILITY",
         ),
         "IBLOCKS" => array(
             0 => "2",
