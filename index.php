@@ -73,6 +73,7 @@ $arrFilter = array("PROPERTY" => array(
     ),
     false
 ); ?>
+
     <div class="py-5">
         <div class="container">
             <div class="row">
@@ -181,31 +182,31 @@ $arrFilter = array("PROPERTY" => array(
     false
 ); ?>
 <? $APPLICATION->IncludeComponent(
-	"bitrix:news.line", 
-	"our_blog", 
-	array(
-		"ACTIVE_DATE_FORMAT" => "d.m.Y",
-		"CACHE_GROUPS" => "Y",
-		"CACHE_TIME" => "300",
-		"CACHE_TYPE" => "A",
-		"DETAIL_URL" => "",
-		"FIELD_CODE" => array(
-			0 => "PREVIEW_TEXT",
-			1 => "PREVIEW_PICTURE",
-			2 => "DATE_CREATE",
-			3 => "",
-		),
-		"IBLOCKS" => array(
-			0 => "3",
-		),
-		"IBLOCK_TYPE" => "news",
-		"NEWS_COUNT" => "3",
-		"SORT_BY1" => "ACTIVE_FROM",
-		"SORT_BY2" => "SORT",
-		"SORT_ORDER1" => "DESC",
-		"SORT_ORDER2" => "ASC",
-		"COMPONENT_TEMPLATE" => "our_blog"
-	),
-	false
+    "bitrix:news.line",
+    "our_blog",
+    array(
+        "ACTIVE_DATE_FORMAT" => "d.m.Y",
+        "CACHE_GROUPS" => "Y",
+        "CACHE_TIME" => "300",
+        "CACHE_TYPE" => "A",
+        "DETAIL_URL" => "",
+        "FIELD_CODE" => array(
+            0 => "PREVIEW_TEXT",
+            1 => "PREVIEW_PICTURE",
+            2 => "DATE_CREATE",
+            3 => "",
+        ),
+        "IBLOCKS" => array(
+            0 => "3",
+        ),
+        "IBLOCK_TYPE" => "news",
+        "NEWS_COUNT" => "3",
+        "SORT_BY1" => "ACTIVE_FROM",
+        "SORT_BY2" => "SORT",
+        "SORT_ORDER1" => "DESC",
+        "SORT_ORDER2" => "ASC",
+        "COMPONENT_TEMPLATE" => "our_blog"
+    ),
+    false
 ); ?>
 <? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>

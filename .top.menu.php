@@ -30,7 +30,7 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Авторизация", 
-		"/login", 
+		"/auth/login.php", 
 		Array(), 
 		Array(), 
 		"" 
