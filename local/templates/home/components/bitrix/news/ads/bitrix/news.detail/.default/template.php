@@ -22,6 +22,8 @@ $area = $arResult["DISPLAY_PROPERTIES"]["TOTAL_AREA"]["VALUE"];
 $garage = $arResult["DISPLAY_PROPERTIES"]["GARAGE_AVAILABILITY"]["VALUE"];
 $price = GetMessage('ADS_CURRENCY').$priceValue;
 $date = $arResult["DISPLAY_ACTIVE_FROM"];
+$arAddMaterials = $arResult["DISPLAY_PROPERTIES"]["ADDITIONAL_MATERIALS"]["FILE_VALUE"];
+$arLinks = $arResult["DISPLAY_PROPERTIES"]["LINKS_TO_EXTERNAL_RESOURCES"]["VALUE"];
 ?>
 
 <div class="site-blocks-cover overlay" style="background-image: url(<?=$detailPic?>);" data-aos="fade"
@@ -88,8 +90,12 @@ $date = $arResult["DISPLAY_ACTIVE_FROM"];
                             </strong>
                         </div>
                     </div>
-                    <h2 class="h4 text-black"><?=GetMessage('ADS_MORE_INFO')?></h2>
-                    <p><?=$arResult["DETAIL_TEXT"]?></p>
+                    <div class="row mt-5">
+                        <div class="col-12">
+                            <h2 class="h4 text-black mb-3"><?=GetMessage('ADS_MORE_INFO')?></h2>
+                        </div>
+                        <p><?=$arResult["DETAIL_TEXT"]?></p>
+                    </div>
                     <div class="row mt-5">
                         <div class="col-12">
                             <h2 class="h4 text-black mb-3"><?=GetMessage('ADS_PROPERTY_GALLERY')?></h2>
@@ -98,6 +104,26 @@ $date = $arResult["DISPLAY_ACTIVE_FROM"];
                         <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
                             <a href="<?=$image["SRC"]?>" class="image-popup gal-item"><img src="<?=$image["SRC"]?>" alt="<?=$name?>" class="img-fluid"></a>
                         </div>
+                        <? endforeach; ?>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-12">
+                            <h2 class="h4 text-black mb-3"><?=GetMessage('ADS_ADD_MATERIALS')?></h2>
+                        </div>
+                        <? foreach ($arAddMaterials as $material): ?>
+                            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                                <a href="<?=$material["SRC"]?>" class="image-popup gal-item"><img src="<?=$material["SRC"]?>" alt="<?=$name?>" class="img-fluid"></a>
+                            </div>
+                        <? endforeach; ?>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-12">
+                            <h2 class="h4 text-black mb-3"><?=GetMessage('ADS_EXT_LINKS')?></h2>
+                        </div>
+                        <? foreach ($arLinks as $link): ?>
+                            <div class="col-12 mb-1">
+                                <a href="<?=$link?>" class=""><?=$link?></a>
+                            </div>
                         <? endforeach; ?>
                     </div>
                 </div>
