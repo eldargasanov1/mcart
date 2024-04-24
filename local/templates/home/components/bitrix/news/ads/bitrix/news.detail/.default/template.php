@@ -26,6 +26,12 @@ $arAddMaterials = $arResult["DISPLAY_PROPERTIES"]["ADDITIONAL_MATERIALS"]["FILE_
 $arLinks = $arResult["DISPLAY_PROPERTIES"]["LINKS_TO_EXTERNAL_RESOURCES"]["VALUE"];
 ?>
 
+<pre>
+    <?php
+        print_r($arAddMaterials);
+    ?>
+</pre>
+
 <div class="site-blocks-cover overlay" style="background-image: url(<?=$detailPic?>);" data-aos="fade"
      data-stellar-background-ratio="0.5">
     <div class="container">
@@ -110,11 +116,11 @@ $arLinks = $arResult["DISPLAY_PROPERTIES"]["LINKS_TO_EXTERNAL_RESOURCES"]["VALUE
                         <div class="col-12">
                             <h2 class="h4 text-black mb-3"><?=GetMessage('ADS_ADD_MATERIALS')?></h2>
                         </div>
-                        <? foreach ($arAddMaterials as $material): ?>
-                            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-                                <a href="<?=$material["SRC"]?>" class="image-popup gal-item"><img src="<?=$material["SRC"]?>" alt="<?=$name?>" class="img-fluid"></a>
-                            </div>
-                        <? endforeach; ?>
+<!--                        --><?// foreach ($arAddMaterials as $material): ?>
+<!--                            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">-->
+<!--                                <a href="--><?php //=$material["SRC"]?><!--" class="image-popup gal-item"><img src="--><?php //=$material["SRC"]?><!--" alt="--><?php //=$name?><!--" class="img-fluid"></a>-->
+<!--                            </div>-->
+<!--                        --><?// endforeach; ?>
                     </div>
                     <div class="row mt-5">
                         <div class="col-12">
