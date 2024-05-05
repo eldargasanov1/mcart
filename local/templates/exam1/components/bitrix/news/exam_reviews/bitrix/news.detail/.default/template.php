@@ -28,12 +28,8 @@ $linkPdfImage = SITE_TEMPLATE_PATH.'/img/icons/pdf_ico_40.png';
 $author = $name.', '.$activeFrom.' г., '.$position.', '.$company.'.';
 $files = $arResult['DISPLAY_PROPERTIES']['DOCUMENTS']['FILE_VALUE'];
 $oneFile = isset($files['ID']);
-
-$APPLICATION->SetPageProperty("title", "Отзыв – ".$name);
-$APPLICATION->SetTitle("Отзыв – ".$name." – ".$company);
-$APPLICATION->SetPageProperty("keywords", "лучшие, отзывы, ".$company);
-$APPLICATION->SetPageProperty("description", $previewText);
 ?>
+
 <div class="review-block">
     <div class="review-text">
         <div class="review-text-cont"><?= $detailText ?></div>

@@ -16,20 +16,24 @@
 
                             <? if ($arItem["IS_PARENT"]): ?>
 
-                                <? if ($arItem["DEPTH_LEVEL"] == 1): ?>
-                                    <li>
-                                        <a href="<?= $arItem["LINK"] ?>"><?= $arItem["TEXT"] ?></a>
-                                        <ul>
-                                        <? if ($arItem['PARAMS']['TEXT_MENU']): ?>
-                                            <div class="menu-text"><?= $arItem['PARAMS']['TEXT_MENU'] ?></div>
-                                        <? endif ?>
-                                <? else: ?>
-                                    <li>
-                                        <a href="<?= $arItem["LINK"] ?>"><?= $arItem["TEXT"] ?></a>
-                                        <ul>
-                                        <? if ($arItem['PARAMS']['TEXT_MENU']): ?>
-                                            <div class="menu-text"><?= $arItem['PARAMS']['TEXT_MENU'] ?></div>
-                                        <? endif ?>
+                                <? if ($arItem["PERMISSION"] > "D"):?>
+
+                                    <? if ($arItem["DEPTH_LEVEL"] == 1): ?>
+                                        <li>
+                                            <a href="<?= $arItem["LINK"] ?>"><?= $arItem["TEXT"] ?></a>
+                                            <ul>
+                                            <? if ($arItem['PARAMS']['TEXT_MENU']): ?>
+                                                <div class="menu-text"><?= $arItem['PARAMS']['TEXT_MENU'] ?></div>
+                                            <? endif ?>
+                                    <? else: ?>
+                                        <li>
+                                            <a href="<?= $arItem["LINK"] ?>"><?= $arItem["TEXT"] ?></a>
+                                            <ul>
+                                            <? if ($arItem['PARAMS']['TEXT_MENU']): ?>
+                                                <div class="menu-text"><?= $arItem['PARAMS']['TEXT_MENU'] ?></div>
+                                            <? endif ?>
+                                    <? endif ?>
+
                                 <? endif ?>
 
                             <? else:?>

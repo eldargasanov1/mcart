@@ -18,8 +18,8 @@ $time = date("G", $timeUnix);
         Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/js/jquery.min.js');
         Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/js/owl.carousel.min.js');
         Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/js/scripts.js');
-        Asset::getInstance()->addString('<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">');
-        Asset::getInstance()->addString('<link rel="shortcut icon" href="favicon.ico">');
+        Asset::getInstance()->addString('<link rel="icon" type="image/vnd.microsoft.icon" href="'.SITE_TEMPLATE_PATH.'/img/favicon.ico">');
+        Asset::getInstance()->addString('<link rel="shortcut icon" href="'.SITE_TEMPLATE_PATH.'/img/favicon.ico">');
     ?>
     <?$APPLICATION->ShowHead()?>
 </head>
@@ -30,7 +30,7 @@ $time = date("G", $timeUnix);
         <div class="inner-wrap">
             <div class="logo-block"><a href="" class="logo">Мебельный магазин</a>
             </div>
-            <?if ($time > 9 && $time < 18):?>
+            <?if ($time >= 9 && $time <= 18):?>
                 <div class="main-phone-block">
                     <a href="tel:84952128506" class="phone">8 (495) 212-85-06</a>
                     <div class="shedule">время работы с 9-00 до 18-00</div>
