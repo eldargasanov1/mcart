@@ -26,7 +26,7 @@ $items = $arResult["ITEMS"];
         ];
 
         $resizeImage = CFile::ResizeImageGet(
-            $item["PREVIEW_PICTURE"]['ID'],
+            $item["PREVIEW_PICTURE"],
             Array("width" => 39, "height" => 39),
             BX_RESIZE_IMAGE_EXACT,
             false

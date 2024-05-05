@@ -29,7 +29,7 @@ $items = $arResult["ITEMS"];
     ];
 
     $resizeImage = CFile::ResizeImageGet(
-        $item["DETAIL_PICTURE"]['ID'],
+        $item["DETAIL_PICTURE"],
         Array("width" => 68, "height" => 50),
         BX_RESIZE_IMAGE_EXACT,
         false

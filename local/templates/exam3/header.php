@@ -55,7 +55,7 @@ $time = date('G', time())
 	"demo", 
 	array(
 		"FORGOT_PASSWORD_URL" => "/s4/login/",
-		"PROFILE_URL" => "/s4/login//user.php",
+		"PROFILE_URL" => "/s4/login/user.php",
 		"REGISTER_URL" => "/s4/login/",
 		"SHOW_ERRORS" => "N",
 		"COMPONENT_TEMPLATE" => "demo"

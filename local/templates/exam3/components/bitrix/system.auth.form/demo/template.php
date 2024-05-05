@@ -109,7 +109,7 @@ CJSCore::Init();
     <nav class="menu-block">
         <ul>
             <li>
-                <a href="<?=$linkProfile?>" ><?=$name?> [<?=$login?>]</a>
+                <a href="<?=$linkProfile?>"><?=$name?> [<?=$login?>]</a>
             </li>
             <li><a href="<?=$linkLogout?>"><?=GetMessage("AUTH_LOGOUT_BUTTON")?></a>
             </li>
