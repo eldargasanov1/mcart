@@ -18,21 +18,27 @@
                                 <?= str_repeat("</ul></li>", ($previousLevel - $arItem["DEPTH_LEVEL"])); ?>
                             <? endif ?>
                             <? if ($arItem["IS_PARENT"]): ?>
-                                <? if ($arItem["DEPTH_LEVEL"] == 1): ?>
-                                    <li>
-                                        <a href="<?= $arItem["LINK"] ?>"><?= $arItem["TEXT"] ?></a>
-                                        <ul>
-                                        <? if ($textMenu): ?>
-                                        <div class="menu-text"><?=$textMenu?></div>
-                                        <? endif; ?>
-                                <? else: ?>
-                                    <li>
-                                        <a href="<?= $arItem["LINK"] ?>"><?= $arItem["TEXT"] ?></a>
-                                        <ul>
-                                        <? if ($textMenu): ?>
+
+                                <? if ($arItem["PERMISSION"] > "D"):?>
+
+                                    <? if ($arItem["DEPTH_LEVEL"] == 1): ?>
+                                        <li>
+                                            <a href="<?= $arItem["LINK"] ?>"><?= $arItem["TEXT"] ?></a>
+                                            <ul>
+                                            <? if ($textMenu): ?>
                                             <div class="menu-text"><?=$textMenu?></div>
-                                        <? endif; ?>
+                                            <? endif; ?>
+                                    <? else: ?>
+                                        <li>
+                                            <a href="<?= $arItem["LINK"] ?>"><?= $arItem["TEXT"] ?></a>
+                                            <ul>
+                                            <? if ($textMenu): ?>
+                                                <div class="menu-text"><?=$textMenu?></div>
+                                            <? endif; ?>
+                                    <? endif ?>
+                                                
                                 <? endif ?>
+
                             <? else:?>
                                 <? if ($arItem["PERMISSION"] > "D"):?>
                                     <? if ($arItem["DEPTH_LEVEL"] == 1):?>

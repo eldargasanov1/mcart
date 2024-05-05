@@ -36,15 +36,15 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
-		"Партнерам", 
-		"/s3/for-partners/", 
+		"Отзывы", 
+		"/s3/rew/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Отзывы", 
-		"/s3/rew/", 
+		"Партнерам", 
+		"/s3/for-partners/", 
 		Array(), 
 		Array(), 
 		"" 

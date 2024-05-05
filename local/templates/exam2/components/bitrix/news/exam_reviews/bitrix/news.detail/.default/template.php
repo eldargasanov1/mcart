@@ -28,11 +28,6 @@ $hasOneFile = $files['ID'];
 $author = $name.', '.$activeFrom.' г., '.$position.', '.$company;
 $previewText = $arResult["PREVIEW_TEXT"];
 $detailText = $arResult["DETAIL_TEXT"];
-
-$APPLICATION->SetPageProperty('title', 'Отзыв – '.$name);
-$APPLICATION->SetTitle('Отзыв – '.$name.' – '.$company);
-$APPLICATION->SetPageProperty('keywords', 'лучшие, отзывы, '.$company);
-$APPLICATION->SetPageProperty('description', $previewText);
 ?>
 
 <div class="review-block">
