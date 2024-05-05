@@ -6,13 +6,6 @@ $aMenuLinks = Array(
 		Array(), 
 		Array(), 
 		"" 
-	),
-	Array(
-		"Продукция", 
-		"/s4/products/", 
-		Array(), 
-		Array(), 
-		"" 
 	)
 );
 ?>
